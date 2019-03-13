@@ -11,7 +11,7 @@ https://developer.mozilla.org/es/docs/Web/CSS/At-rule#Grupos_de_Reglas_Condicion
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-@keyframes agua {
+@keyframes desvaneciendose {
   from {
     background: #cbae82;
   }
@@ -28,21 +28,21 @@ body {
   line-height: 1.75;
   overflow-x: hidden;
   /* a continuación llamaré a la animación definada más arriba */
-  animation-name: agua;
-  animation-duration: 5s;
-  animation-timing-function: ease;
+  animation-name: desvaneciendose;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   /* más sobre animación en https://developer.mozilla.org/es/docs/Web/CSS/animation */
 }
 
 a{
-  color:#222;
+  color:#5f4339;
   transition: all ease 1s;
 }
 
 a:hover{
-  color:#000;
+  color:#fff176;
   text-decoration: none;
 }
 
